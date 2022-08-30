@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-div">
+            <div class="logo">
+                <img src="./assets/images/odin-lined.png" alt="odin logo"> 
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form">
+                <p>
+                    This is not a real online service!You know you need something like this in your life to help you realize your deepest dreams.Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.
+                </p>
+                <div class="details">
+                    <h4>Let's do this!</h4>
+                    <form action="./form-page.html" method="post">
+                        <div class="details-one">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first name" id="first-name" pattern="[A-Za-z]" required>
+                            
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="e-mail" id="email" required>
+                           
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="Password" id="password" required>
+                            </div>
+        
+                            <div class="details-two">
+                               
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last name" id="last-name" required>
+
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="number" name="phone-number" id="phone" required>
+        
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm password" id="confirm-password" required>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

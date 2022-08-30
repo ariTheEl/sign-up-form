@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-div{
+    position: relative;
+    flex: 2;
+    background: url(/assets/images/photo-1585202900225-6d3ac20a6962.jpeg);
+    background-position: center;
+}
+
+.logo{
+    position: relative;
+    top: 18%;
+    width: inherit;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo > img{
+    margin:auto 0;
+    box-sizing: content-box;
+    height: 60%;
+}
+.logo>p{
+    color: #fff;
+    font-family:fantasy;
+    font-size: 3.7rem;
+}
+
+.form-div{
+    flex: 3;
+}
+.form{
+    margin: 18% auto;
+}
+.form>p{
+    padding:0 2rem;
+    font-family:cursive ;
+}
+.details{
+    margin: 0;
+    background: #f5deb3;box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.65);
+    width:auto;
+    height:auto;
+    padding: 1em 0;
+}
+
+.details>h4{
+    margin:0 0 0.5em 1.5em
+}
+
+form{
+    display: flex;
+}
+
+.details-one,.details-two{
+    margin: 0 15px;
+    padding: 8px;
+    font-size: 0.7em;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+
+form>div >input{
+    margin:0 0 1em 0
+}
+
+
+
