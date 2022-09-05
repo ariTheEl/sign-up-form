@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/scripts/script.js" defer></script>
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Sign-Up Form</title>
 </head>
@@ -20,33 +21,36 @@
                 <p>
                     This is not a real online service!You know you need something like this in your life to help you realize your deepest dreams.Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.
                 </p>
-                <div class="details">
-                    <h4>Let's do this!</h4>
-                    <form action="./form-page.html" method="post">
+                <form action="form-page.html" method="post" target="_blank">
+                    <fieldset class="details">
+                        <legend><h4>Let's do this!</h4></legend>
                         <div class="details-one">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first name" id="first-name" pattern="[A-Za-z]" required>
-                            
+                            <input type="text" name="first name" id="first-name" minlength="3" maxlength="25" pattern="[A-Za-z-_]" title="Only uppercase or lowercase alpabets,Minimum of 3, maximum of 25." required>
+                        
                             <label for="email">EMAIL</label>
-                            <input type="email" name="e-mail" id="email" required>
-                           
+                            <input type="email" name="e-mail" id="email" required+>
+                            
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="Password" id="password" required>
-                            </div>
+                            <input type="password"
+                            value="password" name="Password" id="password"  required>
+                        </div>
         
-                            <div class="details-two">
-                               
+                        <div class="details-two">
+                                
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last name" id="last-name" required>
+                            <input type="text" name="last name" id="last-name" minlength="3" maxlength="25" pattern="[A-Za-z-_]"  title="Only uppercase or lowercase alpabets,Minimum of 3, maximum of 25." required>
 
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="number" name="phone-number" id="phone" required>
-        
+                            <input type="tel" name="phone-number" id="phone" maxlength="11" pattern="[0-9]" title="Maximum of eleven digits" required>
+            
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm password" id="confirm-password" required>
-                            </div>
-                    </form>
-                </div>
+                            <input type="password" name="confirm password"  value="confirm" id="confirm-password" required>
+                        </div>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Create Account">
+                </form>
+                <p class="login">Already have an account? <a href="./form-page.html" target="_blank">Log In</a> </p>
             </div>
         </div>
     </div>
