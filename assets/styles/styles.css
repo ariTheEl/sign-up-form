@@ -5,6 +5,7 @@ html{
 body{
     margin: 0;
 }
+
 *,*:before, *:after {
     box-sizing: inherit;
 }
@@ -39,6 +40,7 @@ body{
     box-sizing: content-box;
     height: 60%;
 }
+
 .logo>p{
     color: #fff;
     font-family:fantasy;
@@ -49,13 +51,16 @@ body{
     flex: 2;
     background: #e4e6e957;
 }
+
 .form{
     margin: 18% auto;
 }
+
 .form>p{
     padding:0 2rem;
     font-family:cursive ;
 }
+
 .details{
     position: relative;
     margin: 0;
@@ -85,7 +90,7 @@ body{
     color: #9b9b9b;
 }
 
-.details>div >input{
+.details>div>input{
     border-radius: 05px;
     height: 1.5rem;
     margin:0 0 1em 0;
@@ -95,6 +100,8 @@ body{
 .details>div >input:focus,
 .details>div >input:focus-visible {
     outline: 0px;
+    font-family: cursive;
+    background:#fff;
     border:3px solid #3b10d4;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.65);
     transition: all 0.25s ease-in-out;
@@ -119,9 +126,9 @@ form> input{
     color: #596d48;
     text-decoration: none;
 }
+
 .details>div>input:nth-of-type(3).error{
-    background: #596d48;
+    border:3px solid #d41010;
+    box-shadow: 5px 4px 3px rgba(238, 8, 8, 0.753);
+    transition: all 0.25s ease-in-out;
 }
-/* Add a the password fields should be given an error class*/
-
-
